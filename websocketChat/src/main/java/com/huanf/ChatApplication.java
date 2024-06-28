@@ -3,11 +3,15 @@ package com.huanf;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.lang.invoke.MethodHandles;
+
 @SpringBootApplication
 public class ChatApplication {
-
+    private static final int ALLOWED_MODES = 1 | 2 | 3;
     public static void main(String[] args) {
-        SpringApplication.run(ChatApplication.class, args);
+//        SpringApplication.run(ChatApplication.class, args);
+        System.out.println(ALLOWED_MODES);
+
     }
 
     /**
